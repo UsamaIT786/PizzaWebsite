@@ -573,380 +573,91 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .hero-section, .about-section {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-  .hero-image img, .about-image img {
-    width: 300px;
-    height: 220px;
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-@media (max-width: 700px) {
-  .hero-section, .about-section {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100vw;
-    min-width: 0;
-    max-width: 100vw;
-    gap: 1.2rem;
-    padding: 1.2rem 0.2rem !important;
-    text-align: center;
-    overflow: hidden;
-  }
-  .hero-content, .about-content {
-    width: 100%;
-    max-width: 98vw;
-    margin: 0 auto;
-    padding: 0 0.5rem;
-  }
-  .hero-image, .about-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .hero-image img, .about-image img {
-    width: 160px;
-    height: 160px;
-    min-width: 0;
-    min-height: 0;
-    max-width: 90vw;
-    max-height: 40vw;
-    margin: 0 auto;
-    display: block;
-  }
-  .services-list, .menu-list {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .navbar {
-    padding: 1rem 0.5rem;
-  }
-  .hero-section, .about-section {
-    padding: 2rem 0.5rem;
-  }
-  .services-section, .menu-section, .contact-section {
-    padding: 2rem 0.5rem;
-  }
-  .service-card {
-    width: 95vw;
-    min-width: unset;
-  }
-  .service-img {
-    height: 160px;
-  }
-}
-@media (max-width: 500px) {
-  .hero-section, .about-section {
-    padding: 0.7rem 0.1rem !important;
-    gap: 0.7rem;
-  }
-  .hero-image img, .about-image img {
-    width: 110px;
-    height: 110px;
-    max-width: 80vw;
-    max-height: 30vw;
-  }
-  .hero-content h1, .about-content h2 {
-    font-size: 1rem;
-  }
-  .menu-card, .service-card {
-    width: 95vw;
-    min-width: unset;
-  }
-  .modal-content {
-    padding: 1.2rem 0.5rem;
-    min-width: unset;
-  }
-  .footer-pizza-img {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-  .footer-social {
-    gap: 0.7rem;
-  }
-}
 
-/* --- Navbar & Footer Link Border Hover Effect --- */
-.nav-links li a,
-.footer-links a {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.nav-links li a::after,
-.footer-links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: #ffb300;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transition: transform 0.25s cubic-bezier(.4,0,.2,1);
-  z-index: 2;
-}
-.nav-links li a:hover::after,
-.nav-links li a:focus::after,
-.footer-links a:hover::after,
-.footer-links a:focus::after {
-  transform: scaleX(1);
-}
-.nav-links li a,
-.footer-links a {
-  border-bottom: 3px solid transparent;
-  background: transparent;
-}
-.nav-links li a:hover,
-.nav-links li a:focus,
-.footer-links a:hover,
-.footer-links a:focus {
-  background: transparent;
-  color: #e53935;
-}
+  /* ----------------------------- */
+/* ✅ Responsive CSS Starts Here */
+/* ----------------------------- */
 
-/* --- Shop Now Button Next to Explore Menu --- */
-.btn-shop {
-  margin-left: 1.1rem;
-  background: #e53935;
-  color: #fff;
-  transition: background 0.2s, transform 0.2s;
-}
-.btn-shop:hover {
-  background: #ffb300;
-  color: #fff;
-  transform: scale(1.07);
-}
-
-/* --- Shop Modal Styles --- */
-.shop-modal-content {
-  max-width: 420px;
-  padding: 2.5rem 2rem 2rem 2rem;
-  text-align: center;
-  border-radius: 22px;
-  position: relative;
-}
-.shop-modal-img-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.2rem;
-}
-.shop-modal-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  box-shadow: 0 0 0 8px #ffb300, 0 4px 24px rgba(229,57,53,0.10);
-  animation: pizza-spin 18s linear infinite;
-}
-#shopForm input, #shopForm select {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.8rem 1rem;
-  border-radius: 10px;
-  border: 1px solid #ffb300;
-  font-size: 1rem;
-  outline: none;
-  transition: border 0.2s;
-}
-#shopForm input:focus, #shopForm select:focus {
-  border: 2px solid #e53935;
-}
-#shopForm button {
-  width: 100%;
-  background: #e53935;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 0.8rem 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(229,57,53,0.10);
-  transition: background 0.2s, transform 0.2s;
-}
-#shopForm button:hover {
-  background: #ffb300;
-  color: #fff;
-  transform: scale(1.05);
-}
-
-/* --- Footer Full Image, Left Logo, Right Links --- */
-.footer-img-full {
-  width: 100%;
-  position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: none;
-  opacity: 0.13;
-}
-.footer-pizza-img-full {
-  width: 600px;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 50%;
-  animation: pizza-spin 28s linear infinite;
-  filter: blur(0.5px);
-}
-.footer-main {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem 1.5rem 2rem;
-  gap: 2rem;
-}
-.footer-logo-left {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-.footer-pizza-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: none;
-  box-shadow: none;
-  animation: pizza-spin 18s linear infinite;
-  margin-bottom: 0.5rem;
-}
-.footer-links-right {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1.1rem;
-}
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 0.2rem;
-}
-.footer-social {
-  display: flex;
-  gap: 1.1rem;
-  justify-content: flex-end;
-  margin-bottom: 0.2rem;
-}
-.footer-copy {
-  color: #bbb;
-  font-size: 1rem;
-  margin-top: 0.7rem;
-  text-align: right;
-}
-footer {
-  position: relative;
-  overflow: hidden;
-}
-@media (max-width: 900px) {
-  .footer-main {
-    flex-direction: column;
-    align-items: center;
-    padding: 2.5rem 0.5rem 1.5rem 0.5rem;
-    gap: 1.2rem;
-  }
-  .footer-links-right {
-    align-items: center;
-  }
-  .footer-copy {
-    text-align: center;
-  }
-}
-@media (max-width: 600px) {
-  .footer-pizza-img-full {
-    width: 320px;
-    height: 320px;
-  }
-  .footer-pizza-img {
-    width: 80px;
-    height: 80px;
-  }
-  .footer-links {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
-  .footer-social {
-    gap: 0.7rem;
-  }
-} 
-
-/* --- Additional Responsive Improvements --- */
+/* Tablet View (768px and below) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
   }
 
   .nav-links {
     flex-direction: column;
     gap: 1rem;
-    text-align: center;
   }
 
   .hero-section,
   .about-section {
     flex-direction: column;
-    text-align: center;
     padding: 2rem 1rem;
+    text-align: center;
+    gap: 2rem;
   }
 
   .hero-image img,
   .about-image img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 
   .services-list,
   .menu-list {
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 
   .service-card,
   .menu-card {
+    width: 90%;
+  }
+
+  .contact-form {
     width: 100%;
-    max-width: 95vw;
+    padding: 0 1rem;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-links-right {
+    align-items: center;
+  }
+
+  .footer-copy {
+    text-align: center;
   }
 }
 
+/* Mobile View (480px and below) */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 1.6rem;
+  }
+
+  .hero-content p,
+  .about-content p,
+  .service-card-content p,
+  .menu-card .price {
+    font-size: 1rem;
   }
 
   .about-content h2,
   .services-section h2,
   .menu-section h2,
   .contact-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .btn,
@@ -956,16 +667,37 @@ footer {
     font-size: 1rem;
   }
 
-  .footer-main {
-    flex-direction: column;
-    text-align: center;
+  .hero-image img,
+  .about-image img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .menu-card img {
+    width: 160px;
+    height: 110px;
+  }
+
+  .modal-content,
+  .shop-modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .footer-pizza-img {
+    width: 80px;
+    height: 80px;
   }
 
   .footer-links,
   .footer-social {
     flex-direction: column;
-    align-items: center;
     gap: 0.8rem;
+    align-items: center;
   }
 }
+
+
+
+
 
