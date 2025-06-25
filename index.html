@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzon - Handmade Pizza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4e9c8e6e5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizzon Logo">
+        <span>TASTY_PIZZA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section reveal">
+    <div class="hero-content">
+      <h1>Handmade, With an Extra Pinch of <span class="highlight">Love</span></h1>
+      <p>Premium pizzas crafted by experts, using only the freshest ingredients.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+      <button type="button" class="btn btn-shop" id="shopNowBtn">Shop Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizza Hero">
+    </div>
+  </section>
+
+  <section id="about" class="about-section reveal">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>We are passionate about delivering the best pizza experience. Our chefs use traditional recipes and the finest ingredients to create mouth-watering pizzas for every occasion. At Pizzon, we believe in quality, freshness, and customer satisfaction. Whether you are dining in, taking out, or ordering online, our team is dedicated to making your pizza experience memorable. We use hand-tossed dough, homemade sauces, and a variety of fresh toppings to ensure every bite is delicious. Join us and taste the difference!</p>
+    </div>
+    <div class="about-image">
+      <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="About Pizza">
+    </div>
+  </section>
+
+  <section id="services" class="services-section reveal">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <img class="service-img" src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Fresh Pizza">
+        <div class="service-card-content">
+          <h3>Fresh Pizza</h3>
+          <p>Hot and fresh pizzas made to order, every time.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img class="service-img" src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Fast Delivery">
+        <div class="service-card-content">
+          <h3>Fast Delivery</h3>
+          <p>Lightning-fast delivery to your doorstep.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img class="service-img" src="https://cdn.pixabay.com/photo/2017/01/22/19/20/pizza-2000614_1280.jpg" alt="Quality Ingredients">
+        <div class="service-card-content">
+          <h3>Quality Ingredients</h3>
+          <p>Only the best, locally sourced ingredients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section reveal">
+    <h2>Our Menu</h2>
+    <div class="menu-list">
+      <div class="menu-card">
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Margherita Pizza">
+        <h3>Margherita</h3>
+        <p>Classic delight with 100% real mozzarella cheese.</p>
+        <span class="price">₹299</span>
+        <button class="order-btn" data-pizza="Margherita">Order Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Pepperoni Pizza">
+        <h3>Pepperoni</h3>
+        <p>Loaded with pepperoni and extra cheese.</p>
+        <span class="price">₹349</span>
+        <button class="order-btn" data-pizza="Pepperoni">Order Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="https://cdn.pixabay.com/photo/2017/01/22/19/20/pizza-2000614_1280.jpg" alt="Veggie Pizza">
+        <h3>Veggie Supreme</h3>
+        <p>Loaded with fresh veggies and cheese.</p>
+        <span class="price">₹329</span>
+        <button class="order-btn" data-pizza="Veggie Supreme">Order Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" alt="BBQ Chicken Pizza">
+        <h3>BBQ Chicken</h3>
+        <p>Grilled chicken, BBQ sauce, and onions.</p>
+        <span class="price">₹399</span>
+        <button class="order-btn" data-pizza="BBQ Chicken">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section reveal">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-accent"></div>
+    <div class="footer-img-full">
+      <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Footer Pizza Full" class="footer-pizza-img-full">
+    </div>
+    <div class="footer-main reveal">
+      <div class="footer-logo-left">
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Footer Pizza Logo" class="footer-pizza-img">
+      </div>
+      <div class="footer-links-right">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 320 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.22 0-121 44.38-121 124.72v70.62H22.89V288h81.47v224h100.2V288z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186c-39.5 0-71.5-32-71.5-71.5s32-71.5 71.5-71.5 71.5 32 71.5 71.5-32 71.5-71.5 71.5zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1S388.6 1.7 353.3 0C317.7-1.7 282.3-1.7 246.7 0c-35.3 1.7-66.7 9.9-92.1 36.2S1.7 123.4 0 158.7C-1.7 194.3-1.7 229.7 0 265.3c1.7 35.3 9.9 66.7 36.2 92.1s56.8 34.5 92.1 36.2c35.6 1.7 71 1.7 106.6 0 35.3-1.7 66.7-9.9 92.1-36.2s34.5-56.8 36.2-92.1c1.7-35.6 1.7-71 0-106.6zM398.8 388c-7.8 19.6-23.1 34.9-42.7 42.7-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.9-23.1-42.7-42.7-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 23.1-34.9 42.7-42.7 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.9 23.1 42.7 42.7 11.7 29.5 9 99.5 9 132.1s2.6 102.7-9 132.1z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M459.4 151.7c.32 4.54.32 9.1.32 13.66 0 138.72-105.58 298.56-298.56 298.56-59.5 0-114.68-17.22-161.14-47.11 8.44.97 16.87 1.44 25.6 1.44 49.06 0 94.19-16.61 132.1-44.84-46.07-.85-84.8-31.18-98.1-72.77 6.5.97 13.22 1.62 20.13 1.62 9.42 0 18.84-1.3 27.61-3.61-48.08-9.7-84.14-51.98-84.14-102.98v-1.3c14.08 7.83 30.21 12.67 47.43 13.22-28.26-18.84-46.78-51.01-46.78-87.39 0-19.42 5.2-37.36 14.3-52.95 51.97 63.67 129.3 105.58 216.36 110.13-1.62-7.83-2.6-15.98-2.6-24.13 0-58.72 47.43-106.15 106.15-106.15 30.5 0 58.15 12.67 77.41 33.14 24.13-4.54 46.78-13.66 67.13-25.84-7.83 24.61-24.61 45.32-46.78 58.39 21.36-2.28 41.83-8.21 60.67-16.61-14.3 21.04-32.36 39.59-53.25 54.45z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 576 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.84-42.21-48.48-48.48C465.005 64 288 64 288 64s-177.005 0-213.175 11.603c-23.64 6.27-42.199 24.83-48.48 48.48C16.742 160.253 16.742 256 16.742 256s0 95.747 9.603 131.917c6.281 23.65 24.84 42.21 48.48 48.48C110.995 448 288 448 288 448s177.005 0 213.175-11.603c23.64-6.27 42.199-24.83 48.48-48.48C559.258 351.747 559.258 256 559.258 256s0-95.747-9.603-131.917zM232.1 338.1V173.9l142.7 82.1-142.7 82.1z"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2024 Pizzon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Payment Modal -->
+  <div class="modal" id="paymentModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Order Payment</h2>
+      <form id="paymentForm">
+        <input type="text" id="customerName" placeholder="Your Name" required>
+        <input type="email" id="customerEmail" placeholder="Your Email" required>
+        <input type="text" id="pizzaType" placeholder="Pizza Type" readonly>
+        <input type="number" id="cardNumber" placeholder="Card Number" required>
+        <input type="text" id="expiry" placeholder="MM/YY" required>
+        <input type="number" id="cvv" placeholder="CVV" required>
+        <button type="submit">Pay & Order</button>
+      </form>
+      <div id="orderSuccess" class="success-message"></div>
+    </div>
+  </div>
+
+  <!-- Shop Now Pizza Modal -->
+  <div class="modal" id="shopModal">
+    <div class="modal-content shop-modal-content">
+      <span class="close-btn" id="closeShopModal">&times;</span>
+      <div class="shop-modal-img-wrap">
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizza" class="shop-modal-img">
+      </div>
+      <h2>Shop Your Pizza</h2>
+      <form id="shopForm">
+        <input type="text" id="shopName" placeholder="Your Name" required>
+        <input type="email" id="shopEmail" placeholder="Your Email" required>
+        <select id="shopPizzaType" required>
+          <option value="">Select Pizza</option>
+          <option>Margherita</option>
+          <option>Pepperoni</option>
+          <option>Veggie Supreme</option>
+          <option>BBQ Chicken</option>
+        </select>
+        <input type="number" id="shopQty" placeholder="Quantity" min="1" max="10" required>
+        <button type="submit">Order Now</button>
+      </form>
+      <div id="shopSuccess" class="success-message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
