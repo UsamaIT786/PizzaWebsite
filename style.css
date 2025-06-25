@@ -897,3 +897,75 @@ footer {
     gap: 0.7rem;
   }
 } 
+
+/* --- Additional Responsive Improvements --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hero-section,
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-image img,
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .services-list,
+  .menu-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .service-card,
+  .menu-card {
+    width: 100%;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-content h2,
+  .services-section h2,
+  .menu-section h2,
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn,
+  .order-btn,
+  .contact-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-social {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
