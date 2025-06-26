@@ -429,7 +429,6 @@ footer {
   border-top: none;
   position: relative;
   box-shadow: 0 -2px 24px rgba(255,179,0,0.07);
-  overflow: hidden;
 }
 .footer-accent {
   width: 100%;
